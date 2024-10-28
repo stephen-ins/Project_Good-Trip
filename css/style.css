@@ -1,0 +1,469 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(../assets/font/raleway-variablefont_wght-webfont.woff) format(woff),
+    url(../assets/font/raleway-variablefont_wght-webfont.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+  } */
+
+/****** General ***********/
+/* * {
+  font-family: "Raleway", sans-serif;
+} */
+
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+  --icone-black-color: #00000;
+  --font-weight-bolder: bolder;
+  --border-grey-filter: gray;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+/* .main{ */
+
+.main__container {
+  max-width: 1440px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.footer,
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: var(--font-weight-bolder);
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(20px 50px 60px rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+  height: 100%;
+  font-weight: var(--font-weight-bolder);
+}
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+}
+
+/****** Hebergements ***********/
+
+.hebergements {
+  width: 66%;
+}
+
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hebergements-cards {
+  margin-top: 33px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.hebergements-cards img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+  margin: 0;
+}
+
+.hebergements-cards .card-rating {
+  margin-bottom: 5px;
+}
+
+/****** Populaires ***********/
+.populaires {
+  width: 33%;
+}
+
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.populaires-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
+}
+
+/* activités */
+
+.activités {
+  width: 100%;
+  height: auto;
+}
+
+.activités-title {
+  margin: 40px;
+}
+
+.activités-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.paysage__marseille {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  align-content: center;
+  filter: drop-shadow(20px 50px 60px rgba(0, 0, 0, 0.1));
+}
+
+.card__marseille {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.section-title-marseille {
+  margin-top: 80px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Large devices (desktop, >=1024px) */
+
+@media (min-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .main__container {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 6px 0 0 6px;
+    margin-top: 150px;
+  }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .hebergements-and-populaires {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__container {
+    width: 100%;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .hebergements {
+    width: 100%;
+  }
+
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .activités {
+    width: 100%;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+  .footer {
+    width: 100%;
+    padding: 6px 0 0 6px;
+    margin-top: 150px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+  }
+
+  .search__bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button__content {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    height: 50px;
+  }
+
+  .slogan__header,
+  .subtitle__header {
+    width: 100%;
+    text-align: center;
+  }
+  .search__bar {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .informations {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav__list__item:hover {
+    border-top: none;
+    color: var(--main-color);
+    border-bottom: solid 2px;
+  }
+
+  .main__container {
+    width: 100%;
+  }
+  .header__nav {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .title__filters {
+    width: 95%;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .filter__list {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6px 0;
+  }
+
+  .filter__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .filter__bar {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 6px 0;
+  }
+
+  .nav__list {
+    width: 100%;
+    border-bottom: var(--border-grey-filter) 1px solid;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hebergements-title,
+  .populaires-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hebergements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .populaires {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activités {
+    width: 100%;
+  }
+
+  .populaires-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hebergements-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .activités-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .paysage__marseille {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 100px;
+    /* padding: 10px 0 0 10px; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .footer__info3,
+  .footer__info2,
+  .footer__info1 {
+    padding: 12px;
+  }
+}

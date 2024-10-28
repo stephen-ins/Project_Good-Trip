@@ -1,0 +1,23 @@
+@import url(reset.css);
+@import url(style.css);
+
+.footer {
+  width: 100%;
+  height: 200px;
+  margin-top: 150px;
+  background-color: var(--filter-bg-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  align-items: baseline;
+}
+
+.title__footer {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bolder);
+}
+
+.title__item__footer {
+  padding-top: 6px;
+  padding-left: 6px;
+}

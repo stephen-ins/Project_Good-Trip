@@ -1,0 +1,1 @@
+# goodTrip-starter-pack

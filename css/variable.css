@@ -1,0 +1,82 @@
+
+:root {
+    --font-family: 'space_grotesklight';
+
+    /* --font-family-title: "Shrikhand", serif; */
+
+    --body-font-size: 16px;
+
+    /* --title-font-size: 28px;
+    --subtitle-font-size: 18px; */
+
+    --max-width-content: 1055px;
+    --max-height-header: 700px;
+    --max-width-logo: 100px;
+    --min-height-nav: 70px;
+    --max-height-footer: 200px;
+
+    /* --max-width-menu: 634px;
+    --logo-width: 162px;
+    --logo-height: 32px;
+    --hr-width: 40px;
+    --icone-back-width: 18px;
+    --icone-number-width: 24px;
+    --height-picuture-sm: 250px;
+    --height-picuture-md: 400px; */
+
+    --spacing-default: 0.5rem;
+    --spacing-xxs: 0.25rem;
+    --spacing-xs: 0.625rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 2.25rem;
+    --spacing-check: 1.625rem;
+
+    --font-size-h1: 3rem;
+    --font-size-xs:	0.75rem;
+    --font-size-sm:	0.875rem;
+    --font-size-md:	1rem;
+    --font-size-lg:	1.125rem;
+    --font-size-xl:	1.25rem;
+    --font-size-subtitle: 1.5rem;
+
+
+    --line-height-xs: 1.4;
+    --line-height-sm: 1.45;
+    --line-height-md: 1.55;
+    --line-height-lg: 1.6;
+    --line-height-xl: 1.65;
+
+    --font-weight-xs: 300; 
+    --font-weight-sm: 400; 
+    --font-weight-md: 500; 
+    --font-weight-lg: 600; 
+    --font-weight-xl: 700; 
+
+    --radius-default: 1.5rem;
+    --radius-xs: 0.125rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl-light: 1rem;
+    --radius-xl: 1.25rem;
+    --radius-xxl: 2rem;
+
+    /* --border-hr-color: #99E2D0;
+    --form-bg-color: #EAEAEA;
+    --main-bg-color: #F6F6F6;
+    --bg-color-first: #9356DC;
+    --bg-color-second: #FF79DA;
+    --dark-color: #000000; 
+    --white-color: #ffffff;
+    --card-price-color: #353535; 
+    --footer-bg-color: #353535;
+    --icone-bg-color: #99E2D0; */
+
+    --text-color-primary-dark: #000000;
+    --text-color-primary-white: #fff;
+    --bg-btn: #888888;
+    --bg-footer: #4a4a4a;
+}
